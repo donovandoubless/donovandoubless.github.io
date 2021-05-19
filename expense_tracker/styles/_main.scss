@@ -1,0 +1,57 @@
+.main {
+	padding: 10px;
+	width: 100%;
+	height: 100%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: space-between;
+
+	h1 {
+		color: #f55c47;
+		font-size: 2.5rem;
+		font-weight: lighter;
+		text-transform: uppercase;
+	}
+
+	.totalBalance {
+		display: grid;
+		text-align: center;
+		place-content: center;
+		width: 300px;
+		height: 300px;
+		position: relative;
+		color: #fff;
+		z-index: 1;
+
+		h3 {
+			font-size: 1.5rem;
+		}
+
+		.chart {
+			z-index: -1;
+			position: absolute;
+		}
+	}
+
+	.incomeExpense {
+		width: 100%;
+		display: flex;
+
+		.incomeTotal {
+			letter-spacing: 2px;
+			color: #a5e1ad;
+			text-align: center;
+			width: 100%;
+			font-size: 1.5rem;
+		}
+
+		.expenseTotal {
+			letter-spacing: 2px;
+			color: #ee6d3a;
+			text-align: center;
+			width: 100%;
+			font-size: 1.5rem;
+		}
+	}
+}

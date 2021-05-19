@@ -1,0 +1,277 @@
+.main {
+  padding: 10px;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.main h1 {
+  color: #f55c47;
+  font-size: 2.5rem;
+  font-weight: lighter;
+  text-transform: uppercase;
+}
+
+.main .totalBalance {
+  display: grid;
+  text-align: center;
+  place-content: center;
+  width: 300px;
+  height: 300px;
+  position: relative;
+  color: #fff;
+  z-index: 1;
+}
+
+.main .totalBalance h3 {
+  font-size: 1.5rem;
+}
+
+.main .totalBalance .chart {
+  z-index: -1;
+  position: absolute;
+}
+
+.main .incomeExpense {
+  width: 100%;
+  display: flex;
+}
+
+.main .incomeExpense .incomeTotal {
+  letter-spacing: 2px;
+  color: #a5e1ad;
+  text-align: center;
+  width: 100%;
+  font-size: 1.5rem;
+}
+
+.main .incomeExpense .expenseTotal {
+  letter-spacing: 2px;
+  color: #ee6d3a;
+  text-align: center;
+  width: 100%;
+  font-size: 1.5rem;
+}
+
+.income {
+  padding: 10px;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.income .incomeTitle {
+  margin: 20px 0 20px;
+  position: relative;
+  color: #a5e1ad;
+  font-weight: 700;
+}
+
+.income .transaction {
+  margin-top: 50px;
+  margin-bottom: 10px;
+  color: #fff;
+  font-weight: 700;
+}
+
+.income input {
+  color: rgba(255, 255, 255, 0.8);
+  margin-bottom: 5px;
+  appearance: none;
+  background: none;
+  outline: none;
+  border: none;
+  display: block;
+  padding: 10px;
+  border-bottom: 1px solid #888;
+}
+
+.income input ::placeholder {
+  color: #888;
+}
+
+.income input:focus {
+  background-color: #280246;
+}
+
+.income button {
+  outline: none;
+  border: none;
+  cursor: pointer;
+  margin: 10px 0 10px;
+  padding: 5px;
+  width: 80px;
+  border-radius: 5px;
+  background-color: #62b86e;
+  color: #fff;
+}
+
+.income ul {
+  list-style-type: none;
+  color: #a5e1ad;
+  overflow: auto;
+  font-weight: 500;
+}
+
+.income ul::-webkit-scrollbar {
+  width: 7px;
+}
+
+.income ul::-webkit-scrollbar-track {
+  background: #090a0f;
+}
+
+.income ul::-webkit-scrollbar-thumb {
+  background-image: linear-gradient(to bottom, #004b81 0%, #00758a 51%, #0a74c0 100%);
+  background-size: 200% auto;
+  transition: 0.5s;
+  border-radius: 20px;
+}
+
+.income ul::-webkit-scrollbar-thumb:hover {
+  box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.5);
+}
+
+.income ul li {
+  margin-bottom: 1rem;
+  padding-right: 1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.income ul li #delete {
+  width: 30px;
+  cursor: pointer;
+}
+
+.expense {
+  padding: 10px;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.expense .expenseTitle {
+  margin: 20px 0 20px;
+  position: relative;
+  color: #ff7b54;
+  font-weight: 700;
+}
+
+.expense .transaction {
+  margin-top: 50px;
+  margin-bottom: 10px;
+  color: #fff;
+  font-weight: 700;
+}
+
+.expense input {
+  color: rgba(255, 255, 255, 0.8);
+  margin-bottom: 5px;
+  appearance: none;
+  background: none;
+  outline: none;
+  border: none;
+  display: block;
+  padding: 10px;
+  border-bottom: 1px solid #888;
+}
+
+.expense input ::placeholder {
+  color: #888;
+}
+
+.expense input:focus {
+  background-color: #280246;
+}
+
+.expense button {
+  outline: none;
+  border: none;
+  cursor: pointer;
+  margin: 10px 0 10px;
+  padding: 5px;
+  width: 80px;
+  border-radius: 5px;
+  background-color: #ff7b54;
+  color: #fff;
+}
+
+.expense ul {
+  list-style-type: none;
+  color: #ff7b54;
+  overflow: auto;
+  font-weight: 500;
+}
+
+.expense ul::-webkit-scrollbar {
+  width: 7px;
+}
+
+.expense ul::-webkit-scrollbar-track {
+  background: #090a0f;
+}
+
+.expense ul::-webkit-scrollbar-thumb {
+  background-image: linear-gradient(to bottom, #004b81 0%, #00758a 51%, #0a74c0 100%);
+  background-size: 200% auto;
+  transition: 0.5s;
+  border-radius: 20px;
+}
+
+.expense ul::-webkit-scrollbar-thumb:hover {
+  box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.5);
+}
+
+.expense ul li {
+  margin-bottom: 1rem;
+  padding-right: 1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.expense ul li #delete {
+  width: 30px;
+  cursor: pointer;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Baloo Da 2", cursive;
+  height: 100vh;
+  width: 100vw;
+  background-color: #85ffbd;
+  background-image: linear-gradient(45deg, #85ffbd 0%, #fffb7d 100%);
+  display: grid;
+  place-content: center;
+}
+
+body .App {
+  height: 75vh;
+  width: 75vw;
+  padding: 50px;
+  background-color: #2f0550;
+  box-shadow: 0 0px 30px rgba(0, 0, 0, 0.75);
+  border-radius: 5px;
+  display: flex;
+}
+
+footer {
+  position: absolute;
+  bottom: 5vh;
+  width: 100%;
+  text-align: center;
+}
+/*# sourceMappingURL=style.css.map */

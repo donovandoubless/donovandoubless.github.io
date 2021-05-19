@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Baloo+Da+2:wght@400;500;700&display=swap"
+			rel="stylesheet"
+		/>
+		<link rel="stylesheet" href="./styles/style.css" />
+		<script src="app.js"></script>
+		<title>Expense Tracker</title>
+	</head>
+	<body>
+		<div class="App">
+			<div class="main">
+				<h1>Expense Tracker</h1>
+				<div class="totalBalance">
+					<div class="chart"></div>
+					<h3>Your balance</h3>
+					<h2 class="balance"></h2>
+				</div>
+				<div class="incomeExpense">
+					<div class="incomeTotal">
+						<div>Income</div>
+						<div>+RM <span class="totalIncome"></span></div>
+					</div>
+					<div class="expenseTotal">
+						<div>Expenses</div>
+						<div>-RM <span class="totalExpense"></span></div>
+					</div>
+				</div>
+			</div>
+			<div class="income">
+				<h3 class="incomeTitle">Income</h3>
+				<input
+					type="text"
+					name=""
+					id="incomeTitle"
+					placeholder="Add income...."
+				/>
+				<input type="number" name="" id="incomeValue" placeholder="0" />
+				<button class="income-btn">Submit</button>
+				<h3 class="transaction">Transaction History</h3>
+				<ul class="incomeTransaction"></ul>
+			</div>
+			<div class="expense">
+				<h3 class="expenseTitle">Expense</h3>
+				<input
+					type="text"
+					name=""
+					id="expenseTitle"
+					placeholder="Add Expense...."
+				/>
+				<input type="number" name="" id="expenseValue" placeholder="0" />
+				<button class="expense-btn">Submit</button>
+				<h3 class="transaction">Transaction History</h3>
+				<ul class="expenseTransaction"></ul>
+			</div>
+		</div>
+	</body>
+
+	<footer>© Donovan Bailey</footer>
+</html>
